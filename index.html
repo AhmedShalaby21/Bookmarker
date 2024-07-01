@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./assets/images/2899445.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawsome/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-body-tertiary">
+    
+    <h1 class=" py-2 text-center ">Bookmarker</h1>
+    <hr class="w-75 m-auto ">
+    <h2 class="text-center py-4 "><i class="fa-solid fa-bookmark" style="color: #512b1f;"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark" style="color: #512b1f;"></i></h2>
+<div class="w-75 m-auto   "> 
+    
+    
+     <label class="mb-2" for="sn"><i class="fa-solid fa-book-bookmark"></i> Site Name</label> 
+    <input id="sn" class="form-control mb-3" type="text" placeholder="Bookmark Name">
+    <label class="mb-2" for="su"><i class="fa-solid fa-link"></i> Site URL</label>
+    <input id="su" class="form-control" type="email" placeholder="Website URL">
+   <div class="text-center">
+     <button onclick="addNewSite()" id="sub" class=" btn btn-outline-dark text-center mt-3 ">Submit</button>
+     <button onclick="clearInputs()" class="btn btn-outline-danger text-center mt-3 ">Clear</button>
+
+    
+   </div>
+   <input id="Search" class="form-control my-3" type="text" onkeyup="searchElement(this.value)" placeholder="Search">
+    <hr class=" m-auto mt-4 ">
+
+    <table class="mt-4 table-striped table">
+        <thead>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+            <th>Update</th>
+        
+    
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+</div> 
+
+
+
+    
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
